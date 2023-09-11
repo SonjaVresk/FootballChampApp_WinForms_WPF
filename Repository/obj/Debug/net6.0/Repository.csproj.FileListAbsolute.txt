@@ -1,0 +1,14 @@
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\bin\Debug\net6.0\Repository.deps.json
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\bin\Debug\net6.0\Repository.dll
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\bin\Debug\net6.0\Repository.pdb
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.Properties.Resources.resources
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.csproj.GenerateResource.cache
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.dll
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\refint\Repository.dll
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\Repository.pdb
+C:\Users\s_vre\Documents\Algebra\4. semestar\Objektno orijentirano programiranje - praktikum u .NET okolini\OOP.NET Projekt\Sonja_Vresk\NogometnoPrvenstvo\Repository\obj\Debug\net6.0\ref\Repository.dll

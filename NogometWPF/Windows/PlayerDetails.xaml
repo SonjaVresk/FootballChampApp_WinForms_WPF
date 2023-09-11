@@ -1,0 +1,67 @@
+﻿<Window x:Class="NogometWPF.Windows.PlayerDetails"
+        x:Name="PlayerDetailsWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NogometWPF.Windows"
+        xmlns:props="clr-namespace:NogometWPF.Properties"
+        mc:Ignorable="d"
+        Title="PlayerDetails" d:DesignHeight="500" d:DesignWidth="350" 
+        Height="500" Width="350"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid Background="#08313A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="150"/>
+            <ColumnDefinition Width="*" MinWidth="150"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="0" HorizontalAlignment="Right">
+            <Image x:Name="imgPPic" Source="/Images/user.png" Height="70" Width="70" Margin="20 20 40 20"></Image>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="40 40 20 20" HorizontalAlignment="Left">
+            <Image x:Name="imgCaptain" Source="/Images/captain (1).png" Height="30" Width="30"
+                   Visibility="Hidden"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="0">
+            <Label x:Name="lblPName" HorizontalAlignment="Center" Padding="20" FontSize="20" Foreground="#5CD85A" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0"  Margin="0" Background="#1A5653">
+            <Label Content="No." HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1"  Margin="0" Background="#1A5653">
+            <Label x:Name="lblPNumber" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0"  Margin="0">
+            <Label Content="{x:Static props:Resources.pozicija}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1"  Margin="0">
+            <Label x:Name="lblPPosition" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0"  Margin="0" Background="#1A5653">
+            <Label Content="{x:Static props:Resources.brojGolova}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1"  Margin="0" Background="#1A5653">
+            <Label x:Name="lblPGoals" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="0"  Margin="0">
+            <Label Content="{x:Static props:Resources.zutihKartona}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="1"  Margin="0">
+            <Label x:Name="lblPYellowCards" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <!--<Button x:Name="btnClose" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right"
+                Height="20" Width="20" Background="Transparent" Click="btnClose_Click">
+            <Image Source="/Images/close.png"/>
+        </Button>-->
+    </Grid>
+</Window>

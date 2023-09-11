@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="NogometWPF.UserControls.TeamDetails"
+             x:Name="TeamDetailsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NogometWPF.UserControls"
+             xmlns:props="clr-namespace:NogometWPF.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="400"
+             VerticalAlignment="Center" HorizontalAlignment="Center"
+             BorderThickness="2" BorderBrush="#5CD85A">
+
+    <Grid Background="#08313A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="200"/>
+            <ColumnDefinition Width="*" MinWidth="200"/>
+        </Grid.ColumnDefinitions>
+
+        <!--<StackPanel Grid.Row="0" Grid.Column="0" Margin="0" Background="#1A5653">
+            <Label  HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"> Naziv: </Label>
+        </StackPanel>-->
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2"  Margin="0">
+            <Label x:Name="lblTeamName" HorizontalAlignment="Center" Padding="0 30 0 10" FontSize="20" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <!--<StackPanel Grid.Row="1" Grid.Column="0"  Margin="0">
+            <Label HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A">Fifa kod:</Label>
+        </StackPanel>-->
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2"  Margin="0">
+            <Label x:Name="lblTeamFifaCode" HorizontalAlignment="Center" Padding="0 10 0 30" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0"  Margin="0" Background="#1A5653">
+            <Label Content="{x:Static props:Resources.odigranihUtakmica}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1"  Margin="0" Background="#1A5653">
+            <Label x:Name="lblPlayedMatches" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0"  Margin="0">
+            <Label Content="{x:Static props:Resources.brojPobjeda}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1"  Margin="0">
+            <Label x:Name="lblMatchesWon" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0"  Margin="0" Background="#1A5653">
+            <Label Content="{x:Static props:Resources.brojPoraza}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1"  Margin="0" Background="#1A5653">
+            <Label x:Name="lblMatchesLost" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="0"  Margin="0">
+            <Label Content="{x:Static props:Resources.neodlucenihUtakmica}"  HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="1"  Margin="0">
+            <Label x:Name="lblMatchesEq" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="0"  Margin="0" Background="#1A5653">
+            <Label Content="{x:Static props:Resources.golovi}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="1"  Margin="0" Background="#1A5653">
+            <Label x:Name="lblGoalsP" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Grid.Column="0"  Margin="0">
+            <Label Content="{x:Static props:Resources.primljenihGolova}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Grid.Column="1"  Margin="0">
+            <Label x:Name="lblGoalsG" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="8" Grid.Column="0"  Margin="0" Background="#1A5653">
+            <Label Content="{x:Static props:Resources.razlika}" HorizontalAlignment="Right" Padding="20" FontSize="15" Foreground="#5CD85A"/>
+        </StackPanel>
+        <StackPanel Grid.Row="8" Grid.Column="1"  Margin="0" Background="#1A5653">
+            <Label x:Name="lblGoalsD" HorizontalAlignment="Left" Padding="20" FontSize="15" Foreground="#D1E8A1"/>
+        </StackPanel>
+        <Button x:Name="btnClose" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right"
+                Height="20" Width="20" Background="Transparent" Click="btnClose_Click">
+            <Image Source="/Images/close.png"/>
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="NogometWPF.UserControls.SettingsWinUC"
+             x:Name="SettingsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NogometWPF.UserControls"
+             xmlns:props="clr-namespace:NogometWPF.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="430" d:DesignWidth="510">             
+
+    <Grid x:Name="gSelectChampLangUC" HorizontalAlignment="Center" VerticalAlignment="Center" 
+              Background="#08313A" Visibility="Visible">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="40">
+            <TextBlock Text="{x:Static props:Resources.odaberitePrvenstvo}" 
+                       FontWeight="Bold" FontSize="18" Margin="0 0 0 15" 
+                       Foreground="#5CD85A"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="rbtnFemale" Content="{x:Static props:Resources.zensko}" 
+                             FontSize="15" Margin="10" Foreground="#D1E8A1" />
+                <RadioButton x:Name="rbtnMale" Content="{x:Static props:Resources.musko}" 
+                             FontSize="15" Foreground="#D1E8A1" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="40">
+            <TextBlock Text="{x:Static props:Resources.odaberiteJezik}" 
+                       FontWeight="Bold" FontSize="18" Margin="0 0 0 15" 
+                       Foreground="#5CD85A" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="rbtnEng" Content="{x:Static props:Resources.en}" 
+                             FontSize="15" Margin="10" Foreground="#D1E8A1" />
+                <RadioButton x:Name="rbtnCro" Content="{x:Static props:Resources.hr}" 
+                             FontSize="15" Foreground="#D1E8A1" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="40" Background="#1A5653">
+            <TextBlock Text="{x:Static props:Resources.odaberiteVelicinuEkrana}" 
+                       FontWeight="Bold" FontSize="18" Margin="0 0 0 15" Padding="0 10 0 0" 
+                       Foreground="#5CD85A" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <RadioButton x:Name="rbSize1" Content="700/700" FontSize="15" 
+                              IsChecked="True" 
+                             Foreground="#D1E8A1" Margin="10"/>
+                <RadioButton x:Name="rbSize2" Content="1000/750" FontSize="15" 
+                             Foreground="#D1E8A1" Margin="10"/>
+                <RadioButton x:Name="rbSize3" Content="1450/800" FontSize="15" 
+                             Foreground="#D1E8A1" Margin="10"/>               
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="10">
+            <Button x:Name="btSave" Content="{x:Static props:Resources.spremi}" 
+                    FontSize="14" FontWeight="Bold" Width="100" Margin="0 20 10 20" 
+                    Background="#9ACD32" Padding="10" HorizontalAlignment="Center"
+                    Click="btSave_Click"/>
+        </StackPanel>
+        
+        <Button x:Name="btnClose" Grid.Column="1"  Margin="5" 
+                VerticalAlignment="Top" HorizontalAlignment="Right"
+                Height="20" Width="20" Background="Transparent" BorderThickness="0"
+                Click="btnClose_Click">
+            <StackPanel>
+                <Image Source="/Images/close.png"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>
